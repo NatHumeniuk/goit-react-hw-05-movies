@@ -1,0 +1,35 @@
+.castList {
+  border-top: 2px solid rgb(139, 137, 136);
+  padding: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.castItem {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.photo {
+  width: 100px;
+  height: auto;
+}
+.castInfoWrap {
+  margin-left: 10px;
+}
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.alert {
+  font-size: 24px;
+  font-weight: 600;
+  color: #783838;
+}

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import { defaultImg } from 'units/defaultUnit';
 
-import css from '../pages/Cast.module.css';
+import css from '../Cast/Cast.module.css';
 
 import { requestMovieCast } from 'services/api';
 

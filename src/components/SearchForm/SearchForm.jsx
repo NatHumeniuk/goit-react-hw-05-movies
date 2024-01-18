@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './SearchForm.module.css';
 
-export const SearchForm = ({ handleSubmit }) => {
+export const SearchForm = ({ handleSubmit, query }) => {
   return (
     <>
       <div className={css.searchbar}>
@@ -18,6 +18,7 @@ export const SearchForm = ({ handleSubmit }) => {
             autoFocus
             placeholder="Key word"
             name="searchInput"
+            defaultValue={query}
           />
         </form>
       </div>

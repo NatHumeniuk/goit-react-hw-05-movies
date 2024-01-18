@@ -6,12 +6,12 @@ import { BackLink } from 'components/BackLink/BackLink';
 import { Loader } from 'components/Loader/Loader';
 import { defaultImg } from 'units/defaultUnit';
 
-import css from './MovieDetails.module.css';
+import css from '../MovieDetails/MovieDetails.module.css';
 
 import { requestMovieById } from 'services/api';
 
-const Cast = lazy(() => import('./Cast'));
-const Reviews = lazy(() => import('./Reviews'));
+const Cast = lazy(() => import('../Cast/Cast'));
+const Reviews = lazy(() => import('../Reviews/Reviews'));
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -76,12 +76,16 @@ const MovieDetails = () => {
             <h2 className={css.subtitle}>Aditional information</h2>
             <ul>
               <li>
-                <Link to="cast" className={css.link}>
+                <Link to="cast" className={css.link} state={{ from: backLink }}>
                   Cast
                 </Link>
               </li>
               <li>
-                <Link to="reviews" className={css.link}>
+                <Link
+                  to="reviews"
+                  className={css.link}
+                  state={{ from: backLink }}
+                >
                   Reviews
                 </Link>
               </li>

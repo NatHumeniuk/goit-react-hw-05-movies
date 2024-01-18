@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import css from '../pages/Reviews.module.css';
+import css from '../Reviews/Reviews.module.css';
 
 import { requestMovieReview } from 'services/api';
 

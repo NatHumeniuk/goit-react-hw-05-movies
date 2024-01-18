@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import css from '../pages/Movies.module.css';
+import css from '../Movies/Movies.module.css';
 
 import { requestMovieByQuery } from 'services/api';
 
@@ -49,7 +49,7 @@ const Movies = () => {
 
   return (
     <>
-      <SearchForm handleSubmit={handleSubmit} />
+      <SearchForm handleSubmit={handleSubmit} query={query} />
       <div>
         {isLoading && <Loader />}
         <ul className={css.moviesList}>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import { MoviesList } from 'components/MoviesList/MoviesList';
-import css from './Home.module.css';
+import css from '../Home/Home.module.css';
 
 import { requestMoviesTrend } from 'services/api';
 
